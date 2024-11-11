@@ -30,4 +30,11 @@ public class AppTest {
         int actual=a.sum(-10, 20);
         assertEquals(expected,actual);
     }
+    @Test
+    public void testSumWithZeros() {
+        App a=new App();
+        int expected=0;
+        int actual=a.sum(0, 0);
+        assertEquals(expected,actual);
+    }
 }
